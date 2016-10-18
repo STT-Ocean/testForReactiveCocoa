@@ -49,7 +49,7 @@
 -(NSArray *)dataArray
 {
     if (!_dataArray) {
-        _dataArray = @[@"初级使用方法",@"ReactiveCocoa的进阶使用方法"];
+        _dataArray = @[@"ReactiveCocoa的初级使用方法",@"ReactiveCocoa的进阶使用方法"];
     }return  _dataArray;
 }
 

@@ -21,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 进阶使用方法 和介绍
+    [self hight_leaveMeathed];
 }
 
 //  进阶使用方法
@@ -29,13 +30,10 @@
 {
     /*
      Reactive Cocoa 操作须知 1 所有的信号 (RACSiginal)都可以进行操作 因为所有的操作方法都定义在 RACStream.h 中 只要继承自RACStream 就有了操作方法
-     2 操作思想  2.1 使用的是（hook）思想  用于改变API 执行结果的技术 2.2 截获API调用的技术 2.3 在每次调用一个API 结果返回前，先执行自己的方法改变结果的输出
-     3 核心方法是采用bind(绑定)的方法而且是RAC中的核心开发方法，之前的开发方法是通过赋值的方式（把重心放到绑定上）既在创建一个对象的时候就绑定好以后想要做的事情，而不是等到赋值的时候才去做 eg ： 把数据展示到界面上之前才采用重写空间的setModel的方法，而RAC就可以在一开始创建控件的时候就绑定好数据
-     
-     
+     2  操作思想  2.1 使用的是（hook）思想  用于改变API 执行结果的技术 2.2 截获API调用的技术 2.3 在每次调用一个API 结果返回前，先执行自己的方法改变结果的输出
+     3  核心方法是采用bind(绑定)的方法而且是RAC中的核心开发方法，之前的开发方法是通过赋值的方式（把重心放到绑定上）既在创建一个对象的时候就绑定好以后想要做的事情，而不是等到赋值的时候才去做 eg ： 把数据展示到界面上之前才采用重写空间的setModel的方法，而RAC就可以在一开始创建控件的时候就绑定好数
      
      */
-    
     UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, 300, 40)];
     [self.view addSubview:textField];
     textField.layer.borderColor = [UIColor blackColor].CGColor;
@@ -55,8 +53,6 @@
      RARStramBindBlock 的 参数 value 是表示接受到信号的原始值还没有做处理
      参数 *stop 是用来控制绑定block 如果*stop = yes 那么就会结束绑定
      注意 bindBlock 中做信号处理的结果
-     
-     
      */
     
     [[textField.rac_textSignal bind:^RACStreamBindBlock{
