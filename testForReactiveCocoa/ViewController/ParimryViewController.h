@@ -1,16 +1,14 @@
 //
-//  ViewController.h
+//  ParimryViewController.h
 //  testForReactiveCocoa
 //
-//  Created by Ocean on 10/14/16.
+//  Created by Ocean on 10/18/16.
 //  Copyright © 2016 Ocean. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
-@interface ViewController :BaseViewController
-
+@interface ParimryViewController : BaseViewController
 
 
 @end
-

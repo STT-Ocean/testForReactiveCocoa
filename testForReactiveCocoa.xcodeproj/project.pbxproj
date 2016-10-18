@@ -18,6 +18,9 @@
 		8E05B2461DB08B3100D90A05 /* testForReactiveCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05B2451DB08B3100D90A05 /* testForReactiveCocoaTests.m */; };
 		8E05B2511DB08B3100D90A05 /* testForReactiveCocoaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05B2501DB08B3100D90A05 /* testForReactiveCocoaUITests.m */; };
 		8E9DBDC01DB4B32300556761 /* RactiveCocoaDel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DBDBF1DB4B32300556761 /* RactiveCocoaDel.m */; };
+		8E9DBDD61DB5FA9400556761 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DBDD31DB5FA9400556761 /* BaseViewController.m */; };
+		8E9DBDD71DB5FA9400556761 /* ParimryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DBDD51DB5FA9400556761 /* ParimryViewController.m */; };
+		8E9DBDDA1DB5FB0E00556761 /* Heigh_leaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DBDD91DB5FB0E00556761 /* Heigh_leaveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		8E05B2521DB08B3100D90A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E9DBDBE1DB4B32300556761 /* RactiveCocoaDel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RactiveCocoaDel.h; sourceTree = "<group>"; };
 		8E9DBDBF1DB4B32300556761 /* RactiveCocoaDel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RactiveCocoaDel.m; sourceTree = "<group>"; };
+		8E9DBDD21DB5FA9400556761 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8E9DBDD31DB5FA9400556761 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8E9DBDD41DB5FA9400556761 /* ParimryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParimryViewController.h; sourceTree = "<group>"; };
+		8E9DBDD51DB5FA9400556761 /* ParimryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParimryViewController.m; sourceTree = "<group>"; };
+		8E9DBDD81DB5FB0E00556761 /* Heigh_leaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heigh_leaveViewController.h; sourceTree = "<group>"; };
+		8E9DBDD91DB5FB0E00556761 /* Heigh_leaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Heigh_leaveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,7 @@
 		8E05B2271DB08B3100D90A05 /* testForReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DBDD11DB5FA6F00556761 /* ViewController */,
 				8E05B22B1DB08B3100D90A05 /* AppDelegate.h */,
 				8E05B22C1DB08B3100D90A05 /* AppDelegate.m */,
 				8E05B22E1DB08B3100D90A05 /* ViewController.h */,
@@ -170,6 +180,19 @@
 				8E05B2521DB08B3100D90A05 /* Info.plist */,
 			);
 			path = testForReactiveCocoaUITests;
+			sourceTree = "<group>";
+		};
+		8E9DBDD11DB5FA6F00556761 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DBDD21DB5FA9400556761 /* BaseViewController.h */,
+				8E9DBDD31DB5FA9400556761 /* BaseViewController.m */,
+				8E9DBDD41DB5FA9400556761 /* ParimryViewController.h */,
+				8E9DBDD51DB5FA9400556761 /* ParimryViewController.m */,
+				8E9DBDD81DB5FB0E00556761 /* Heigh_leaveViewController.h */,
+				8E9DBDD91DB5FB0E00556761 /* Heigh_leaveViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,9 +380,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9DBDC01DB4B32300556761 /* RactiveCocoaDel.m in Sources */,
+				8E9DBDD61DB5FA9400556761 /* BaseViewController.m in Sources */,
 				8E05B2361DB08B3100D90A05 /* testForReactiveCocoa.xcdatamodeld in Sources */,
 				8E05B2301DB08B3100D90A05 /* ViewController.m in Sources */,
 				8E05B22D1DB08B3100D90A05 /* AppDelegate.m in Sources */,
+				8E9DBDD71DB5FA9400556761 /* ParimryViewController.m in Sources */,
+				8E9DBDDA1DB5FB0E00556761 /* Heigh_leaveViewController.m in Sources */,
 				8E05B22A1DB08B3100D90A05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,9 @@
 @end
 
 @class ViewController;
+/* 
+ 基础的代理使用方法 
+ */
 @interface RactiveCocoaDel : UIView
 
 

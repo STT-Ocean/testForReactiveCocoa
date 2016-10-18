@@ -17,7 +17,7 @@ static  CGFloat const spadding = 10.f;
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     __weak typeof(&*self) weakSelf = self;
     __block NSInteger index = 0;
-    //  filter：是过滤条件 map： 映射
+    //  filter：是过滤条件 map： 映射  
     NSArray * buttonArray = [[[[_dataArray rac_sequence] filter:^BOOL(NSString * value) {
         return value.length !=0; // 这个条件成立的时候 才会继续往map的block中运行
     }] map:^id(NSString * value) {
@@ -38,7 +38,7 @@ static  CGFloat const spadding = 10.f;
     [but setTitle:value forState:UIControlStateNormal];
     [but setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     but.rac_command = [[RACCommand  alloc] initWithSignalBlock:^RACSignal *(UIButton * input) {
-//        NSLog(@"===== input = %@",input);
+        //        NSLog(@"===== input = %@",input);
         if ([self.delegate respondsToSelector:@selector(RactiveCocoaDelButtonDidClick:)]) {
             [self.delegate RactiveCocoaDelButtonDidClick:input];
         }
@@ -52,6 +52,7 @@ static  CGFloat const spadding = 10.f;
     but.frame = CGRectMake(x, y, weight, height);
     return but;
 }
+
 -(void)layoutSubviews
 {
     [super layoutSubviews];
@@ -61,20 +62,3 @@ static  CGFloat const spadding = 10.f;
 }
 @end
 
-/*
- NSArray *numbers = @[@(1),@(2),@(3),@(4),@(5)];
- // filter 过滤 条件
- //  map 映射
- // 这里的意识是 将满足条件filter 的 映射 放到数组result 中
- NSArray *result = [[[[numbers rac_sequence]
- 　　　　  filter:^BOOL(NSNumber *value) {
- return [value intValue] %2 ==0;
- }] map:^id(NSNumber *value) {
- long square = [value intValue] * [value intValue];
- return @(square);
- }]  array];
- NSLog(@"results = %@",result);
- 
- 
- 
- */
