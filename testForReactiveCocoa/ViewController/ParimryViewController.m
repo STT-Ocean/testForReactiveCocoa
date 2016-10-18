@@ -34,7 +34,7 @@
 {
     
     // 1  UI控件
-    [self testForReactiveCocoa];
+//    [self testForReactiveCocoa];
     
     // 2  代理
     [self testForCoustomView];
@@ -43,13 +43,13 @@
 -(void)testForReactiveCocoa
 {
     // 1.1 button
-//    [self testForReactiveCocoaButAction];
+    [self testForReactiveCocoaButAction];
     
     // 1.2 textField
-//    [self testForReactiveCocoaForTextField];
+    [self testForReactiveCocoaForTextField];
     
     // 1.3 为view  添加手势
-//    [self testForReactiveCocoaLabelWithTap];
+    [self testForReactiveCocoaLabelWithTap];
     
     // 1.4  代理的实现  * 代理的实现是有限制的 只能够实现返回值为void 的代理
     [self testForReactiveCocoaWithDelegate];
